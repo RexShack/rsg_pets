@@ -40,10 +40,10 @@ AddEventHandler("rsg_pets:client:callfoxhound", function()
 			else
 				doggo.delete()
 				petout = false
-				exports['rsg_notify']:DisplayNotification('sent your dog to the kennel!', 5000)
+				exports['qbr-core']:Notify(9, 'sent your dog to the kennel', 5000, 0, 'hud_textures', 'check', 'COLOR_WHITE')
 			end
 		else
-			exports['rsg_notify']:DisplayNotification('you need a dog whistle', 5000)
+			exports['qbr-core']:Notify(9, 'you don\'t have this pet', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['foxhound'] = 1 })
 end)
@@ -63,10 +63,10 @@ AddEventHandler("rsg_pets:client:callsheperd", function()
 			else
 				doggo.delete()
 				petout = false
-				exports['rsg_notify']:DisplayNotification('sent your dog to the kennel!', 5000)
+				exports['qbr-core']:Notify(9, 'sent your dog to the kennel', 5000, 0, 'hud_textures', 'check', 'COLOR_WHITE')
 			end
 		else
-			exports['rsg_notify']:DisplayNotification('you need a sheperd whistle', 5000)
+			exports['qbr-core']:Notify(9, 'you don\'t have this pet', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['sheperd'] = 1 })
 end)
@@ -86,10 +86,10 @@ AddEventHandler("rsg_pets:client:callcoonhound", function()
 			else
 				doggo.delete()
 				petout = false
-				exports['rsg_notify']:DisplayNotification('sent your dog to the kennel!', 5000)
+				exports['qbr-core']:Notify(9, 'sent your dog to the kennel', 5000, 0, 'hud_textures', 'check', 'COLOR_WHITE')
 			end
 		else
-			exports['rsg_notify']:DisplayNotification('you need a coonhound whistle', 5000)
+			exports['qbr-core']:Notify(9, 'you don\'t have this pet', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['coonhound'] = 1 })
 end)
@@ -109,10 +109,10 @@ AddEventHandler("rsg_pets:client:callcatahoulacur", function()
 			else
 				doggo.delete()
 				petout = false
-				exports['rsg_notify']:DisplayNotification('sent your dog to the kennel!', 5000)
+				exports['qbr-core']:Notify(9, 'sent your dog to the kennel', 5000, 0, 'hud_textures', 'check', 'COLOR_WHITE')
 			end
 		else
-			exports['rsg_notify']:DisplayNotification('you need a catahoula cur whistle', 5000)
+			exports['qbr-core']:Notify(9, 'you don\'t have this pet', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['catahoulacur'] = 1 })
 end)
@@ -124,7 +124,7 @@ AddEventHandler("rsg_pets:client:callbayretriever", function()
 		if hasItem then
 			if petout == false then
 				local model = "A_C_DogChesBayRetriever_01"
-				local name = "catahoulacur"
+				local name = "bayretriever"
 				doggo = newDoggo(model, name)
 				petout = true
 				doggo.whistle()
@@ -132,10 +132,10 @@ AddEventHandler("rsg_pets:client:callbayretriever", function()
 			else
 				doggo.delete()
 				petout = false
-				exports['rsg_notify']:DisplayNotification('sent your dog to the kennel!', 5000)
+				exports['qbr-core']:Notify(9, 'sent your dog to the kennel', 5000, 0, 'hud_textures', 'check', 'COLOR_WHITE')
 			end
 		else
-			exports['rsg_notify']:DisplayNotification('you need a bay retriever whistle', 5000)
+			exports['qbr-core']:Notify(9, 'you don\'t have this pet', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['bayretriever'] = 1 })
 end)
@@ -155,10 +155,10 @@ AddEventHandler("rsg_pets:client:callcollie", function()
 			else
 				doggo.delete()
 				petout = false
-				exports['rsg_notify']:DisplayNotification('sent your dog to the kennel!', 5000)
+				exports['qbr-core']:Notify(9, 'sent your dog to the kennel', 5000, 0, 'hud_textures', 'check', 'COLOR_WHITE')
 			end
 		else
-			exports['rsg_notify']:DisplayNotification('you need a collie whistle', 5000)
+			exports['qbr-core']:Notify(9, 'you don\'t have this pet', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['collie'] = 1 })
 end)
@@ -178,10 +178,10 @@ AddEventHandler("rsg_pets:client:callhound", function()
 			else
 				doggo.delete()
 				petout = false
-				exports['rsg_notify']:DisplayNotification('sent your dog to the kennel!', 5000)
+				exports['qbr-core']:Notify(9, 'sent your dog to the kennel', 5000, 0, 'hud_textures', 'check', 'COLOR_WHITE')
 			end
 		else
-			exports['rsg_notify']:DisplayNotification('you don\'t have this pet', 5000)
+			exports['qbr-core']:Notify(9, 'you don\'t have this pet', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['hound'] = 1 })
 end)
@@ -201,10 +201,10 @@ AddEventHandler("rsg_pets:client:callhusky", function()
 			else
 				doggo.delete()
 				petout = false
-				exports['rsg_notify']:DisplayNotification('sent your dog to the kennel!', 5000)
+				exports['qbr-core']:Notify(9, 'sent your dog to the kennel', 5000, 0, 'hud_textures', 'check', 'COLOR_WHITE')
 			end
 		else
-			exports['rsg_notify']:DisplayNotification('you don\'t have this pet', 5000)
+			exports['qbr-core']:Notify(9, 'you don\'t have this pet', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['husky'] = 1 })
 end)
@@ -224,10 +224,10 @@ AddEventHandler("rsg_pets:client:calllab", function()
 			else
 				doggo.delete()
 				petout = false
-				exports['rsg_notify']:DisplayNotification('sent your dog to the kennel!', 5000)
+				exports['qbr-core']:Notify(9, 'sent your dog to the kennel', 5000, 0, 'hud_textures', 'check', 'COLOR_WHITE')
 			end
 		else
-			exports['rsg_notify']:DisplayNotification('you don\'t have this pet', 5000)
+			exports['qbr-core']:Notify(9, 'you don\'t have this pet', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['lab'] = 1 })
 end)
@@ -247,10 +247,10 @@ AddEventHandler("rsg_pets:client:callpoodle", function()
 			else
 				doggo.delete()
 				petout = false
-				exports['rsg_notify']:DisplayNotification('sent your dog to the kennel!', 5000)
+				exports['qbr-core']:Notify(9, 'sent your dog to the kennel', 5000, 0, 'hud_textures', 'check', 'COLOR_WHITE')
 			end
 		else
-			exports['rsg_notify']:DisplayNotification('you don\'t have this pet', 5000)
+			exports['qbr-core']:Notify(9, 'you don\'t have this pet', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['poodle'] = 1 })
 end)
@@ -270,10 +270,10 @@ AddEventHandler("rsg_pets:client:callstreet", function()
 			else
 				doggo.delete()
 				petout = false
-				exports['rsg_notify']:DisplayNotification('sent your dog to the kennel!', 5000)
+				exports['qbr-core']:Notify(9, 'sent your dog to the kennel', 5000, 0, 'hud_textures', 'check', 'COLOR_WHITE')
 			end
 		else
-			exports['rsg_notify']:DisplayNotification('you don\'t have this pet', 5000)
+			exports['qbr-core']:Notify(9, 'you don\'t have this pet', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 		end
 	end, { ['street'] = 1 })
 end)
